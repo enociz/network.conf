@@ -37,9 +37,25 @@
   </head>
   <body class="w-100 bg-white">
   
+    <main>
+      <h3>Coming soon...</h3>
+      <h1 id="countdown">Time Remaining</h1>
+    </main>
+  
   Coming soon
   
-  <script   src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  
+  <script src="//cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
+  
+  <script type="text/javascript">
+    $("#countdown")
+    .countdown("2017/08/02", function(event) {
+      $(this).text(
+        event.strftime('%D days %H:%M:%S')
+      );
+    });
+  </script>
   
   </body>
   </html>
