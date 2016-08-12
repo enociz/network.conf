@@ -58,7 +58,7 @@
       
       <h2 class="ttu tc black f2">Updates</h2>
       
-      <a class="mt4 twitter-timeline" href="https://twitter.com/ntwrkcf">Tweets by ntwrkcf</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <a class="mt4 twitter-timeline" href="https://twitter.com/ntwrkcf">Tweets by ntwrkcf</a> <script async class="measure" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       
     </section>
     
@@ -154,7 +154,7 @@
     $("#countdown")
     .countdown("2017/08/02", function(event) {
       $(this).text(
-        event.strftime('%D days %H:%M:%S')
+        event.strftime('%D days %H hours %M minutes %S seconds')
       );
     });
   </script>
