@@ -56,14 +56,14 @@
     
     <section class="bg-white black center pv6" id="updates">
       
-      <h2 class="ttu tc black f2">Updates</h2>
+      <h2 class="ttu tracked tc black f2">Updates</h2>
       
       <div class="measure center"></div><a class="twitter-timeline" href="https://twitter.com/ntwrkcf">Tweets by ntwrkcf</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
       
     </section>
     
     <section class="bg-white black center pv6" id="speakers">
-      <h2 class="ttu tc black f2">Speakers</h2>
+      <h2 class="ttu tracked tc black f2">Speakers</h2>
       
       <div class="tc">
         
@@ -105,7 +105,7 @@
     </section>
     
     <section class="bg-white black center pv6" id="venue">
-      <h2 class="ttu tc black f2">Venue</h2>
+      <h2 class="ttu tracked tc black f2">Venue</h2>
       
       <div class="measure tc center">
         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBPLbFYCDHV8l3F54sfBuRMVt6oq-1v9Qk'></script><div style='overflow:hidden;height:400px;width:520px;'><div id='gmap_canvas' style='height:400px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://maps-generator.com/'>maps-generator.com</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=8f78a4841bf701d19b3639bc61b52d35911c85bc'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(-37.8368385,144.99541920000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-37.8368385,144.99541920000001)});infowindow = new google.maps.InfoWindow({content:'<strong>Melbourne High School</strong><br>Forest Hill, South Yarra<br> Melbourne, VIC<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
@@ -114,7 +114,7 @@
     </section>
     
     <section class="bg-white black center pv6" id="sponsors">
-      <h2 class="ttu tc black f2">Sponsors and Affiliates</h2>
+      <h2 class="ttu tracked tc black f2">Sponsors and Affiliates</h2>
       
       <div class="tc">
         
@@ -157,6 +157,10 @@
         event.strftime('%D days %H hours %M minutes %S seconds')
       );
     });
+  </script>
+
+  <script>
+    smoothScroll.init();
   </script>
   
   </body>
